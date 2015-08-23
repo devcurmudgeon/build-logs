@@ -1,0 +1,12 @@
+Version  1.97       ------Sequential Output------ --Sequential Input- --Random-
+Concurrency   1     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Machine        Size K/sec %CP K/sec %CP K/sec %CP K/sec %CP K/sec %CP  /sec %CP
+ca001-001   130560M   142  99 104691  19 52342  10   996  98 125564  11 156.4  18
+Latency             57283us    1792ms    5116ms   35230us     111ms    2986ms
+Version  1.97       ------Sequential Create------ --------Random Create--------
+ca001-001           -Create-- --Read--- -Delete-- -Create-- --Read--- -Delete--
+              files  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+                 16 15236  71 +++++ +++ 20332  88 17980  79 +++++ +++ 20023  87
+Latency             21606us     663us     761us     567us      44us     446us
+1.97,1.97,ca001-001,1,1436141394,130560M,,142,99,104691,19,52342,10,996,98,125564,11,156.4,18,16,,,,,15236,71,+++++,+++,20332,88,17980,79,+++++,+++,20023,87,57283us,1792ms,5116ms,35230us,111ms,2986ms,21606us,663us,761us,567us,44us,446us
+
